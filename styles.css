@@ -1,0 +1,85 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #143F6B;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.piano {
+    display: flex;
+}
+
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    justify-content: flex-end; /* Aligns to bottom */
+}
+
+.white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.white.active {
+    background-color: #CCC;
+}
+
+.black {
+    --width: 68px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+}
+
+.black.active {
+    background-color: #555;
+}
+
+.play {
+    display: flex;
+}
+
+.note {
+    font-size: 64px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.black_note {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 51%;
+}
+
+.play_button {
+    width: 300px;
+    height: 200px;
+    background-color: #575091;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 48px;
+  }

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Piano</title>
+</head>
+<body>
+    <div class="dad">    
+        <div class="play">
+            <button class="play_button" id="button_id">Play Song</button>
+        </div>
+        <div class="piano">
+            <!-- 0 -->
+            
+            <div data-note="A0" class="key white">
+                <div class="note">A0</div>
+            </div>
+            <div data-note="Bb0" class="key black">
+                <div class="black_note">Bb0</div>
+            </div>
+            <div data-note="B0" class="key white">
+                <div class="note">B0</div>
+            </div>
+            
+            <!-- 1 -->
+            
+            <div data-note="C1" class="key white">
+                <div class="note">C1</div>
+            </div>
+            <div data-note="Db1" class="key black">
+                <div class="black_note">Db1</div>
+            </div>
+            <div data-note="D1" class="key white">
+                <div class="note">D1</div>
+            </div>
+            <div data-note="Eb1" class="key black">
+                <div class="black_note">Eb1</div>
+            </div>
+            <div data-note="E1" class="key white">
+                <div class="note">E1</div>
+            </div>
+
+            <div data-note="F1" class="key white">
+                <div class="note">F1</div>
+            </div>
+            <div data-note="Gb1" class="key black">
+                <div class="black_note">Gb1</div>
+            </div>
+            <div data-note="G1" class="key white">
+                <div class="note">G1</div>
+            </div>
+            <div data-note="Ab1" class="key black">
+                <div class="black_note">Ab1</div>
+            </div>
+            <div data-note="A1" class="key white">
+                <div class="note">A1</div>
+            </div>
+            <div data-note="Bb1" class="key black">
+                <div class="black_note">Bb1</div>
+            </div>
+            <div data-note="B1" class="key white">
+                <div class="note">B1</div>
+            </div>
+
+            <!-- 2 -->
+
+            <div data-note="C2" class="key white">
+                <div class="note">C2</div>
+            </div>
+            <div data-note="Db2" class="key black">
+                <div class="black_note">Db2</div>
+            </div>
+            <div data-note="D2" class="key white">
+                <div class="note">D2</div>
+            </div>
+            <div data-note="Eb2" class="key black">
+                <div class="black_note">Eb2</div>
+            </div>
+            <div data-note="E2" class="key white">
+                <div class="note">E2</div>
+            </div>
+
+            <div data-note="F2" class="key white">
+                <div class="note">F2</div>
+            </div>
+            <div data-note="Gb2" class="key black">
+                <div class="black_note">Gb2</div>
+            </div>
+            <div data-note="G2" class="key white">
+                <div class="note">G2</div>
+            </div>
+            <div data-note="Ab2" class="key black">
+                <div class="black_note">Ab2</div>
+            </div>
+            <div data-note="A2" class="key white">
+                <div class="note">A2</div>
+            </div>
+            <div data-note="Bb2" class="key black">
+                <div class="black_note">Bb2</div>
+            </div>
+            <div data-note="B2" class="key white">
+                <div class="note">B2</div>
+            </div>
+
+            <!-- 3 -->
+
+            <div data-note="C3" class="key white">
+                <div class="note">C3</div>
+            </div>
+            <div data-note="Db3" class="key black">
+                <div class="black_note">Db3</div>
+            </div>
+            <div data-note="D3" class="key white">
+                <div class="note">D3</div>
+            </div>
+            <div data-note="Eb3" class="key black">
+                <div class="black_note">Eb3</div>
+            </div>
+            <div data-note="E3" class="key white">
+                <div class="note">E3</div>
+            </div>
+    
+            <div data-note="F3" class="key white">
+                <div class="note">F3</div>
+            </div>
+            <div data-note="Gb3" class="key black">
+                <div class="black_note">Gb3</div>
+            </div>
+            <div data-note="G3" class="key white">
+                <div class="note">G3</div>
+            </div>
+            <div data-note="Ab3" class="key black">
+                <div class="black_note">Ab3</div>
+            </div>
+            <div data-note="A3" class="key white">
+                <div class="note">A3</div>
+            </div>
+            <div data-note="Bb3" class="key black">
+                <div class="black_note">Bb3</div>
+            </div>
+            <div data-note="B3" class="key white">
+                <div class="note">B3</div>
+            </div>
+
+            <!-- 4 -->
+
+            <div data-note="C4" class="key white">
+                <div class="note">C4</div>
+            </div>
+            <div data-note="Db4" class="key black">
+                <div class="black_note">Db4</div>
+            </div>
+            <div data-note="D4" class="key white">
+                <div class="note">D4</div>
+            </div>
+            <div data-note="Eb4" class="key black">
+                <div class="black_note">Eb4</div>
+            </div>
+            <div data-note="E4" class="key white">
+                <div class="note">E4</div>
+            </div>
+    
+            <div data-note="F4" class="key white">
+                <div class="note">F4</div>
+            </div>
+            <div data-note="Gb4" class="key black">
+                <div class="black_note">Gb4</div>
+            </div>
+            <div data-note="G4" class="key white">
+                <div class="note">G4</div>
+            </div>
+            <div data-note="Ab4" class="key black">
+                <div class="black_note">Ab4</div>
+            </div>
+            <div data-note="A4" class="key white">
+                <div class="note">A4</div>
+            </div>
+            <div data-note="Bb4" class="key black">
+                <div class="black_note">Bb4</div>
+            </div>
+            <div data-note="B4" class="key white">
+                <div class="note">B4</div>
+            </div>
+
+            <!-- 5 -->
+
+            <div data-note="C5" class="key white">
+                <div class="note">C5</div>
+            </div>
+            <div data-note="Db5" class="key black">
+                <div class="black_note">Db5</div>
+            </div>
+            <div data-note="D5" class="key white">
+                <div class="note">D5</div>
+            </div>
+            <div data-note="Eb5" class="key black">
+                <div class="black_note">Eb5</div>
+            </div>
+            <div data-note="E5" class="key white">
+                <div class="note">E5</div>
+            </div>
+    
+            <div data-note="F5" class="key white">
+                <div class="note">F5</div>
+            </div>
+            <div data-note="Gb5" class="key black">
+                <div class="black_note">Gb5</div>
+            </div>
+            <div data-note="G5" class="key white">
+                <div class="note">G5</div>
+            </div>
+            <div data-note="Ab5" class="key black">
+                <div class="black_note">Ab5</div>
+            </div>
+            <div data-note="A5" class="key white">
+                <div class="note">A5</div>
+            </div>
+            <div data-note="Bb5" class="key black">
+                <div class="black_note">Bb5</div>
+            </div>
+            <div data-note="B5" class="key white">
+                <div class="note">B5</div>
+            </div>
+
+            <!-- 6 -->
+
+            <div data-note="C6" class="key white">
+                <div class="note">C6</div>
+            </div>
+            <div data-note="Db6" class="key black">
+                <div class="black_note">Db6</div>
+            </div>
+            <div data-note="D6" class="key white">
+                <div class="note">D6</div>
+            </div>
+            <div data-note="Eb6" class="key black">
+                <div class="black_note">Eb6</div>
+            </div>
+            <div data-note="E6" class="key white">
+                <div class="note">E6</div>
+            </div>
+    
+            <div data-note="F6" class="key white">
+                <div class="note">F6</div>
+            </div>
+            <div data-note="Gb6" class="key black">
+                <div class="black_note">Gb6</div>
+            </div>
+            <div data-note="G6" class="key white">
+                <div class="note">G6</div>
+            </div>
+            <div data-note="Ab6" class="key black">
+                <div class="black_note">Ab6</div>
+            </div>
+            <div data-note="A6" class="key white">
+                <div class="note">A6</div>
+            </div>
+            <div data-note="Bb6" class="key black">
+                <div class="black_note">Bb6</div>
+            </div>
+            <div data-note="B6" class="key white">
+                <div class="note">B6</div>
+            </div>
+
+            <!-- 7 -->
+
+            <div data-note="C7" class="key white">
+                <div class="note">C7</div>
+            </div>
+            <div data-note="Db7" class="key black">
+                <div class="black_note">Db7</div>
+            </div>
+            <div data-note="D7" class="key white">
+                <div class="note">D7</div>
+            </div>
+            <div data-note="Eb7" class="key black">
+                <div class="black_note">Eb7</div>
+            </div>
+            <div data-note="E7" class="key white">
+                <div class="note">E7</div>
+            </div>
+    
+            <div data-note="F7" class="key white">
+                <div class="note">F7</div>
+            </div>
+            <div data-note="Gb7" class="key black">
+                <div class="black_note">Gb7</div>
+            </div>
+            <div data-note="G7" class="key white">
+                <div class="note">G7</div>
+            </div>
+            <div data-note="Ab7" class="key black">
+                <div class="black_note">Ab7</div>
+            </div>
+            <div data-note="A7" class="key white">
+                <div class="note">A7</div>
+            </div>
+            <div data-note="Bb7" class="key black">
+                <div class="black_note">Bb7</div>
+            </div>
+            <div data-note="B7" class="key white">
+                <div class="note">B7</div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="A0" src="notes/A0.mp3"></audio>
+    <audio id="Bb0" src="notes/Bb0.mp3"></audio>
+    <audio id="B0" src="notes/B0.mp3"></audio>
+    
+    <audio id="C1" src="notes/C1.mp3"></audio>
+    <audio id="Db1" src="notes/Db1.mp3"></audio>
+    <audio id="D1" src="notes/D1.mp3"></audio>
+    <audio id="Eb1" src="notes/Eb1.mp3"></audio>
+    <audio id="E1" src="notes/E1.mp3"></audio>
+    <audio id="F1" src="notes/F1.mp3"></audio>
+    <audio id="Gb1" src="notes/Gb1.mp3"></audio>
+    <audio id="G1" src="notes/G1.mp3"></audio>
+    <audio id="Ab1" src="notes/Ab1.mp3"></audio>
+    <audio id="A1" src="notes/A1.mp3"></audio>
+    <audio id="Bb1" src="notes/Bb1.mp3"></audio>
+    <audio id="B1" src="notes/B1.mp3"></audio>
+    
+    <audio id="C2" src="notes/C2.mp3"></audio>
+    <audio id="Db2" src="notes/Db2.mp3"></audio>
+    <audio id="D2" src="notes/D2.mp3"></audio>
+    <audio id="Eb2" src="notes/Eb2.mp3"></audio>
+    <audio id="E2" src="notes/E2.mp3"></audio>
+    <audio id="F2" src="notes/F2.mp3"></audio>
+    <audio id="Gb2" src="notes/Gb2.mp3"></audio>
+    <audio id="G2" src="notes/G2.mp3"></audio>
+    <audio id="Ab2" src="notes/Ab2.mp3"></audio>
+    <audio id="A2" src="notes/A2.mp3"></audio>
+    <audio id="Bb2" src="notes/Bb2.mp3"></audio>
+    <audio id="B2" src="notes/B2.mp3"></audio>
+
+    <audio id="C3" src="notes/C3.mp3"></audio>
+    <audio id="Db3" src="notes/Db3.mp3"></audio>
+    <audio id="D3" src="notes/D3.mp3"></audio>
+    <audio id="Eb3" src="notes/Eb3.mp3"></audio>
+    <audio id="E3" src="notes/E3.mp3"></audio>
+    <audio id="F3" src="notes/F3.mp3"></audio>
+    <audio id="Gb3" src="notes/Gb3.mp3"></audio>
+    <audio id="G3" src="notes/G3.mp3"></audio>
+    <audio id="Ab3" src="notes/Ab3.mp3"></audio>
+    <audio id="A3" src="notes/A3.mp3"></audio>
+    <audio id="Bb3" src="notes/Bb3.mp3"></audio>
+    <audio id="B3" src="notes/B3.mp3"></audio>
+
+    <audio id="C4" src="notes/C4.mp3"></audio>
+    <audio id="Db4" src="notes/Db4.mp3"></audio>
+    <audio id="D4" src="notes/D4.mp3"></audio>
+    <audio id="Eb4" src="notes/Eb4.mp3"></audio>
+    <audio id="E4" src="notes/E4.mp3"></audio>
+    <audio id="F4" src="notes/F4.mp3"></audio>
+    <audio id="Gb4" src="notes/Gb4.mp3"></audio>
+    <audio id="G4" src="notes/G4.mp3"></audio>
+    <audio id="Ab4" src="notes/Ab4.mp3"></audio>
+    <audio id="A4" src="notes/A4.mp3"></audio>
+    <audio id="Bb4" src="notes/Bb4.mp3"></audio>
+    <audio id="B4" src="notes/B4.mp3"></audio>
+
+    <audio id="C5" src="notes/C5.mp3"></audio>
+    <audio id="Db5" src="notes/Db5.mp3"></audio>
+    <audio id="D5" src="notes/D5.mp3"></audio>
+    <audio id="Eb5" src="notes/Eb5.mp3"></audio>
+    <audio id="E5" src="notes/E5.mp3"></audio>
+    <audio id="F5" src="notes/F5.mp3"></audio>
+    <audio id="Gb5" src="notes/Gb5.mp3"></audio>
+    <audio id="G5" src="notes/G5.mp3"></audio>
+    <audio id="Ab5" src="notes/Ab5.mp3"></audio>
+    <audio id="A5" src="notes/A5.mp3"></audio>
+    <audio id="Bb5" src="notes/Bb5.mp3"></audio>
+    <audio id="B5" src="notes/B5.mp3"></audio>
+
+    <audio id="C6" src="notes/C6.mp3"></audio>
+    <audio id="Db6" src="notes/Db6.mp3"></audio>
+    <audio id="D6" src="notes/D6.mp3"></audio>
+    <audio id="Eb6" src="notes/Eb6.mp3"></audio>
+    <audio id="E6" src="notes/E6.mp3"></audio>
+    <audio id="F6" src="notes/F6.mp3"></audio>
+    <audio id="Gb6" src="notes/Gb6.mp3"></audio>
+    <audio id="G6" src="notes/G6.mp3"></audio>
+    <audio id="Ab6" src="notes/Ab6.mp3"></audio>
+    <audio id="A6" src="notes/A6.mp3"></audio>
+    <audio id="Bb6" src="notes/Bb6.mp3"></audio>
+    <audio id="B6" src="notes/B6.mp3"></audio>
+
+    <audio id="C7" src="notes/C7.mp3"></audio>
+    <audio id="Db7" src="notes/Db7.mp3"></audio>
+    <audio id="D7" src="notes/D7.mp3"></audio>
+    <audio id="Eb7" src="notes/Eb7.mp3"></audio>
+    <audio id="E7" src="notes/E7.mp3"></audio>
+    <audio id="F7" src="notes/F7.mp3"></audio>
+    <audio id="Gb7" src="notes/Gb7.mp3"></audio>
+    <audio id="G7" src="notes/G7.mp3"></audio>
+    <audio id="Ab7" src="notes/Ab7.mp3"></audio>
+    <audio id="A7" src="notes/A7.mp3"></audio>
+    <audio id="Bb7" src="notes/Bb7.mp3"></audio>
+    <audio id="B7" src="notes/B7.mp3"></audio>
+</body>
+</html>
