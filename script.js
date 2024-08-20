@@ -66,7 +66,11 @@ const whiteKeys = document.querySelectorAll(".key.white");
 const blackKeys = document.querySelectorAll(".key.black");
 
 keys.forEach((key) => {
-  key.addEventListener("touchstart", () => playNote(key));
+  if (isTouchDevice()) {
+    key.addEventListener("touchstart", () => playNote(key));
+  } else {
+    key.addEventListener("click", () => playNote(key));
+  }
 });
 
 document.addEventListener("keydown", (e) => {
@@ -104,6 +108,14 @@ async function playSong() {
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
+}
+
+function isTouchDevice() {
+  return (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
 }
 
 function playC3() {
