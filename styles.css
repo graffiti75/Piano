@@ -31,7 +31,7 @@ body {
 }
 
 .white {
-    --width: 100px;
+    --width: 60px;
     background-color: white;
     border: 1px solid #333;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .black {
-    --width: 68px;
+    --width: 30px;
     background-color: black;
     margin-left: calc(var(--width) / -2);
     margin-right: calc(var(--width) / -2);
@@ -57,17 +57,17 @@ body {
 }
 
 .note {
-    font-size: 60px;
+    font-size: 30px;
     margin-top: auto;
     margin-bottom: 30px;
     color: rgb(0, 0, 0);
 }
 
 .black_note {
-    font-size: 32px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 51%;
+    top: 52%;
 }
 
 .play_button {
