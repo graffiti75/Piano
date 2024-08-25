@@ -95,8 +95,90 @@ function playNote(key) {
 
 const button = document.getElementById("button_id");
 button.addEventListener("click", () => {
-  playSong();
+  playPythagoras();
 });
+
+async function playPythagoras() {
+  for (let i = 0; i < 2; i++) {
+    playF5();
+    playBb4();
+    await delay(250);
+    playE5();
+    playA4();
+    await delay(250);
+    playF5();
+    playBb4();
+    await delay(500);
+    playD5();
+    playG4();
+    await delay(500);
+
+    playF5();
+    playBb4();
+    await delay(250);
+    playE5();
+    playA4();
+    await delay(250);
+    playF5();
+    playBb4();
+    await delay(500);
+    playD5();
+    playG4();
+    await delay(500);
+
+    playF5();
+    playBb4();
+    await delay(250);
+    playE5();
+    playA4();
+    await delay(250);
+    playF5();
+    playBb4();
+    await delay(250);
+    playD5();
+    playG4();
+    await delay(500);
+
+    playG5();
+    playC5();
+    await delay(250);
+    playF5();
+    playBb4();
+    await delay(250);
+    playG5();
+    playC5();
+    await delay(500);
+    playE5();
+    playA4();
+    await delay(500);
+
+    playG5();
+    playC5();
+    await delay(250);
+    playF5();
+    playBb4();
+    await delay(250);
+    playG5();
+    playC5();
+    await delay(500);
+    playE5();
+    playA4();
+    await delay(500);
+
+    playG5();
+    playC5();
+    await delay(250);
+    playF5();
+    playBb4();
+    await delay(250);
+    playG5();
+    playC5();
+    await delay(250);
+    playE5();
+    playA4();
+    await delay(500);
+  }
+}
 
 async function playSong() {
   playC3();
@@ -134,4 +216,36 @@ function playG3() {
   playNote(whiteKeys[20]);
   playNote(whiteKeys[22]);
   playNote(whiteKeys[24]);
+}
+
+function playC5() {
+  playNote(whiteKeys[30]);
+}
+
+function playD5() {
+  playNote(whiteKeys[31]);
+}
+
+function playE5() {
+  playNote(whiteKeys[32]);
+}
+
+function playF5() {
+  playNote(whiteKeys[33]);
+}
+
+function playG5() {
+  playNote(whiteKeys[34]);
+}
+
+function playBb4() {
+  playNote(blackKeys[20]);
+}
+
+function playA4() {
+  playNote(whiteKeys[28]);
+}
+
+function playG4() {
+  playNote(whiteKeys[27]);
 }
