@@ -65,6 +65,12 @@ const keys = document.querySelectorAll(".key");
 const whiteKeys = document.querySelectorAll(".key.white");
 const blackKeys = document.querySelectorAll(".key.black");
 
+function setZoom(percent) {
+  document.body.style.fontSize = percent + "%";
+}
+
+setZoom(33);
+
 keys.forEach((key) => {
   if (isTouchDevice()) {
     key.addEventListener("touchstart", () => playNote(key));
@@ -100,84 +106,124 @@ button.addEventListener("click", () => {
 
 async function playPythagoras() {
   for (let i = 0; i < 2; i++) {
-    playF5();
-    playBb4();
+    // First melody
+
+    for (let i = 0; i < 2; i++) {
+      playF4();
+      playBb3();
+      await delay(250);
+      playE4();
+      playA3();
+      await delay(250);
+      playF4();
+      playBb3();
+      await delay(500);
+      playD4();
+      playG3();
+      await delay(500);
+    }
+
+    playF4();
+    playBb3();
     await delay(250);
-    playE5();
-    playA4();
+    playE4();
+    playA3();
     await delay(250);
-    playF5();
-    playBb4();
+    playF4();
+    playBb3();
+    await delay(250);
+    playD4();
+    playG3();
     await delay(500);
-    playD5();
+
+    // Second melody
+
+    for (let i = 0; i < 2; i++) {
+      playG4();
+      playC4();
+      await delay(250);
+      playF4();
+      playBb3();
+      await delay(250);
+      playG4();
+      playC4();
+      await delay(500);
+      playE4();
+      playA3();
+      await delay(500);
+    }
+
     playG4();
-    await delay(500);
-
-    playF5();
-    playBb4();
+    playC4();
     await delay(250);
-    playE5();
-    playA4();
+    playF4();
+    playBb3();
     await delay(250);
-    playF5();
-    playBb4();
-    await delay(500);
-    playD5();
     playG4();
-    await delay(500);
-
-    playF5();
-    playBb4();
+    playC4();
     await delay(250);
-    playE5();
-    playA4();
-    await delay(250);
-    playF5();
-    playBb4();
-    await delay(250);
-    playD5();
-    playG4();
-    await delay(500);
-
-    playG5();
-    playC5();
-    await delay(250);
-    playF5();
-    playBb4();
-    await delay(250);
-    playG5();
-    playC5();
-    await delay(500);
-    playE5();
-    playA4();
-    await delay(500);
-
-    playG5();
-    playC5();
-    await delay(250);
-    playF5();
-    playBb4();
-    await delay(250);
-    playG5();
-    playC5();
-    await delay(500);
-    playE5();
-    playA4();
-    await delay(500);
-
-    playG5();
-    playC5();
-    await delay(250);
-    playF5();
-    playBb4();
-    await delay(250);
-    playG5();
-    playC5();
-    await delay(250);
-    playE5();
-    playA4();
+    playE4();
+    playA3();
     await delay(500);
   }
+
+  // Third melody
+  for (let i = 0; i < 2; i++) {
+    playBb4();
+    playF4();
+    await delay(250);
+    playA4();
+    playE4();
+    await delay(250);
+    playBb4();
+    playF4();
+    await delay(500);
+    playG4();
+    playD4();
+    await delay(500);
+  }
+
+  playBb4();
+  playF4();
+  await delay(250);
+  playA4();
+  playE4();
+  await delay(250);
+  playBb4();
+  playF4();
+  await delay(250);
+  playG4();
+  playD4();
+  await delay(500);
+
+  // Fourth melody
+
+  for (let i = 0; i < 2; i++) {
+    playC5();
+    playG4();
+    await delay(250);
+    playB4();
+    playF4();
+    await delay(250);
+    playC5();
+    playG4();
+    await delay(500);
+    playA4();
+    playE4();
+    await delay(500);
+  }
+  playC5();
+  playG4();
+  await delay(250);
+  playB4();
+  playF4();
+  await delay(250);
+  playC5();
+  playG4();
+  await delay(250);
+  playA4();
+  playE4();
+  await delay(500);
 }
 
 async function playSong() {
@@ -200,22 +246,52 @@ function isTouchDevice() {
   );
 }
 
-function playC3() {
-  playNote(whiteKeys[16]);
-  playNote(whiteKeys[18]);
-  playNote(whiteKeys[20]);
-}
-
-function playE3() {
-  playNote(whiteKeys[18]);
-  playNote(blackKeys[14]);
-  playNote(whiteKeys[22]);
+function playBb3() {
+  playNote(blackKeys[15]);
 }
 
 function playG3() {
   playNote(whiteKeys[20]);
+}
+
+function playA3() {
+  playNote(whiteKeys[21]);
+}
+
+function playB3() {
   playNote(whiteKeys[22]);
+}
+
+function playC4() {
+  playNote(whiteKeys[23]);
+}
+
+function playD4() {
   playNote(whiteKeys[24]);
+}
+
+function playE4() {
+  playNote(whiteKeys[25]);
+}
+
+function playF4() {
+  playNote(whiteKeys[26]);
+}
+
+function playG4() {
+  playNote(whiteKeys[27]);
+}
+
+function playA4() {
+  playNote(whiteKeys[28]);
+}
+
+function playB4() {
+  playNote(whiteKeys[29]);
+}
+
+function playBb4() {
+  playNote(blackKeys[20]);
 }
 
 function playC5() {
@@ -236,16 +312,4 @@ function playF5() {
 
 function playG5() {
   playNote(whiteKeys[34]);
-}
-
-function playBb4() {
-  playNote(blackKeys[20]);
-}
-
-function playA4() {
-  playNote(whiteKeys[28]);
-}
-
-function playG4() {
-  playNote(whiteKeys[27]);
 }
