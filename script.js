@@ -106,8 +106,7 @@ button.addEventListener("click", () => {
 
 async function playPythagoras() {
   for (let i = 0; i < 2; i++) {
-    // First melody
-
+    // 1st melody.
     for (let i = 0; i < 2; i++) {
       playF4();
       playBb3();
@@ -136,8 +135,7 @@ async function playPythagoras() {
     playG3();
     await delay(500);
 
-    // Second melody
-
+    // 2nd melody.
     for (let i = 0; i < 2; i++) {
       playG4();
       playC4();
@@ -167,7 +165,7 @@ async function playPythagoras() {
     await delay(500);
   }
 
-  // Third melody
+  // 3rd melody.
   for (let i = 0; i < 2; i++) {
     playBb4();
     playF4();
@@ -196,8 +194,7 @@ async function playPythagoras() {
   playD4();
   await delay(500);
 
-  // Fourth melody
-
+  // 4th melody.
   for (let i = 0; i < 2; i++) {
     playC5();
     playG4();
@@ -224,14 +221,118 @@ async function playPythagoras() {
   playA4();
   playE4();
   await delay(500);
-}
 
-async function playSong() {
-  playC3();
-  await delay(2000);
-  playE3();
-  await delay(2000);
-  playG3();
+  // 5th melody.
+  for (let i = 0; i < 2; i++) {
+    playD5();
+    playBb4();
+    await delay(250);
+    playC5();
+    playA4();
+    await delay(250);
+    playD5();
+    playBb4();
+    await delay(500);
+    playBb4();
+    playG4();
+    await delay(500);
+  }
+  playD5();
+  playBb4();
+  await delay(250);
+  playC5();
+  playA4();
+  await delay(250);
+  playD5();
+  playBb4();
+  await delay(250);
+  playBb4();
+  playG4();
+  await delay(500);
+
+  // 6th melody.
+  for (let i = 0; i < 2; i++) {
+    playE5();
+    playC5();
+    await delay(250);
+    playD5();
+    playB4();
+    await delay(250);
+    playE5();
+    playC5();
+    await delay(500);
+    playC5();
+    playA4();
+    await delay(500);
+  }
+  playE5();
+  playC5();
+  await delay(250);
+  playD5();
+  playB4();
+  await delay(250);
+  playE5();
+  playC5();
+  await delay(250);
+  playC5();
+  playA4();
+  await delay(500);
+
+  // 7th melody.
+  for (let i = 0; i < 2; i++) {
+    playF5();
+    playD5();
+    await delay(250);
+    playE5();
+    playC5();
+    await delay(250);
+    playF5();
+    playD5();
+    await delay(500);
+    playD5();
+    playBb4();
+    await delay(500);
+  }
+  playF5();
+  playD5();
+  await delay(250);
+  playE5();
+  playC5();
+  await delay(250);
+  playF5();
+  playD5();
+  await delay(250);
+  playD5();
+  playBb4();
+  await delay(500);
+
+  // 8th melody.
+  for (let i = 0; i < 2; i++) {
+    playG5();
+    playE5();
+    await delay(250);
+    playF5();
+    playD5();
+    await delay(250);
+    playG5();
+    playE5();
+    await delay(500);
+    playE5();
+    playC5();
+    await delay(500);
+  }
+  playG5();
+  playE5();
+  await delay(250);
+  playF5();
+  playD5();
+  await delay(250);
+  playG5();
+  playE5();
+  await delay(250);
+  playE5();
+  playC5();
+  await delay(500);
 }
 
 function delay(time) {
